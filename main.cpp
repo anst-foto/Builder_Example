@@ -17,10 +17,11 @@ int main() {
     PrintHouse(stoneHouse);
 
     auto houseBuilder2 = new HouseBuilder2();
-    houseBuilder2->setFoundation("stone");
-    houseBuilder2->setWall("wood");
-    houseBuilder2->setRoof("stone");
-    auto house3 = houseBuilder2->build();
+    auto house3 = houseBuilder2
+        ->setFoundation("stone")
+        ->setWall("wood")
+        ->setRoof("stone")
+        ->build();
     PrintHouse(house3);
 
     return 0;

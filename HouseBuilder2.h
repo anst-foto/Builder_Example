@@ -13,15 +13,17 @@ public:
         _house = new House();
     }
 
-    void setFoundation(string material) {
+    HouseBuilder2* setFoundation(string material) {
         if(material == "wood") {
             _house->setFoundation(new WoodFoundation());
         } else if(material == "stone") {
             _house->setFoundation(new StoneFoundation());
         }
+
+        return this;
     }
 
-    void setWall(string material) {
+    HouseBuilder2* setWall(string material) {
         vector<Wall*> walls;
 
         if(material == "wood") {
@@ -35,14 +37,18 @@ public:
         }
 
         _house->setWalls(walls);
+
+        return this;
     }
 
-    void setRoof(string material) {
+    HouseBuilder2* setRoof(string material) {
         if(material == "wood") {
             _house->setRoof(new WoodRoof());
         } else if(material == "stone") {
             _house->setRoof(new StoneRoof());
         }
+
+        return this;
     }
 
     House* build() {
