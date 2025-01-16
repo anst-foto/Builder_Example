@@ -8,4 +8,5 @@ add_executable(untitled4 main.cpp
         Wall.h
         Foundation.h
         Roof.h
-        HouseBuilder.h)
+        HouseBuilder1.h
+        HouseBuilder2.h)

@@ -4,9 +4,9 @@
 
 using namespace std;
 
-class HouseBuilder {
+class HouseBuilder1 {
 public:
-    HouseBuilder() {}
+    HouseBuilder1() {}
 
     House* buildWoodHouse() {
         vector<Wall*> walls = {new WoodWall(), new WoodWall(), new WoodWall(), new WoodWall()};
